@@ -1,4 +1,5 @@
 from flask import Flask, render_template
+from cv2 import VideoCapture
 
 app = Flask(__name__)
 camera_status = "On"
@@ -7,7 +8,6 @@ camera_status = "On"
 def home():
     return render_template("index.html", status=camera_status)
 
-<<<<<<<
 @app.route('/toggle')
 def toggle():
     if (camera_status == "On"):
@@ -16,11 +16,6 @@ def toggle():
         camera_status = "On"
 
     # Add trigger here
-
-=======
-@app.route('/on')
-def on():
->>>>>>>
     return render_template('index.html', status=camera_status)
 
 if __name__ == '__main__':
