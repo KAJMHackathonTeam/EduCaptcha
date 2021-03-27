@@ -9,3 +9,4 @@ env/lib64
 *.cfg
 env/
 env/pyvenv.cfg
+.vs/
