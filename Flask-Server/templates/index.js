@@ -1,4 +1,4 @@
-var video = document.getElementById("originalWebcam");
+let video = document.getElementById("originalWebcam");
 
 if (navigator.mediaDevices.getUserMedia) {
   navigator.mediaDevices.getUserMedia({ video: true })

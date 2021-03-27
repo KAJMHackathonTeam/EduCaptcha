@@ -7,6 +7,7 @@ camera_status = "On"
 def home():
     return render_template("index.html", status=camera_status)
 
+<<<<<<<
 @app.route('/toggle')
 def toggle():
     if (camera_status == "On"):
@@ -16,6 +17,10 @@ def toggle():
 
     # Add trigger here
 
+=======
+@app.route('/on')
+def on():
+>>>>>>>
     return render_template('index.html', status=camera_status)
 
 if __name__ == '__main__':

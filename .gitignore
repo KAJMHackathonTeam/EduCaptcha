@@ -8,4 +8,8 @@ env/bin/python3
 env/lib64
 *.cfg
 env/
+.vs/
+.vscode/
 env/pyvenv.cfg
+.env/
+env/
