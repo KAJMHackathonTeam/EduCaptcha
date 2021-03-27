@@ -4,6 +4,7 @@ import cv2
 from PIL import Image
 import os
 
+
 video = cv2.VideoCapture(0)
 
 inputShape = video.read()[1].shape

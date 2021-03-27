@@ -7,7 +7,7 @@ Created on Fri Mar 26 20:50:03 2021
 
 from fer import FER
 import matplotlib.pyplot as plt 
-from . import face
+import face
 import cv2
 import time
 import numpy as np
