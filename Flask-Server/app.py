@@ -9,7 +9,6 @@ def home():
 
 @app.route('/on')
 def on():
-    if ()
     return render_template('index.html', status=camera_status)
 if __name__ == '__main__':
     app.run(debug=True)
