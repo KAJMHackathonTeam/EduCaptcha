@@ -5,6 +5,7 @@ import numpy as np
 import cv2
 from PIL import Image
 import os
+from . import EmotionDetection as emotions
 
 app = Flask(__name__)
 camera_status = "On"
@@ -16,8 +17,11 @@ def index():
     return render_template("index.html", status=camera_status)
 
 def getEmotions(frame):
-    #ML results
-    return "sad"
+    processed, detected = emotions.findFace(frame)
+    if len(detected) > 0:
+        emotion = emotions.findEmotion(detected)
+        return emotion
+    return "neutral"
 
 def writeEmotions(result):
     
