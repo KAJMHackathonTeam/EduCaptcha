@@ -1,0 +1,10 @@
+.idea/
+.idea/vcs.xml
+.idea/modules.xml
+.idea/inspectionProfiles/profiles_settings.xml
+.idea/EduCaptcha.iml
+env/bin/python
+env/bin/python3
+env/lib64
+*.cfg
+env/pyvenv.cfg
