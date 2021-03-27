@@ -37,7 +37,7 @@ deactivate () {
 # unset irrelevant variables
 deactivate nondestructive
 
-VIRTUAL_ENV="C:\Users\Kaustubh\Documents\EduCaptcha\env"
+VIRTUAL_ENV="C:\Users\Gaming\Documents\GitHub\EduCaptcha\env"
 export VIRTUAL_ENV
 
 _OLD_VIRTUAL_PATH="$PATH"

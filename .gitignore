@@ -7,4 +7,4 @@ env/bin/python
 env/bin/python3
 env/lib64
 *.cfg
-env/pyvenv.cfg
+env/
