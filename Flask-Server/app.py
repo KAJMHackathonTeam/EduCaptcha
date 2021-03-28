@@ -203,15 +203,14 @@ def camera(toggle):
 
             RGBframe_new = cv2.resize(RGBframe,(camWidth // 4, camHeight // 4))
             RGBframe_new = Image.fromarray(RGBframe_new)
-            print(RGBframe_new)
 
             offset = ((camWidth - int(width )) // 2, (camHeight - int(height)) // 2)
             emojiFrame.paste(emojiOverlay, offset)
 
             offset = (0, 0)
             emojiFrame.paste(RGBframe_new, offset)
+
             emojiFrame = np.array(emojiFrame)
-            
             cam.send(emojiFrame)
             cam.sleep_until_next_frame()
 
